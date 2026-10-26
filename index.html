@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Remote Job Application Kit — a practical system to build stronger remote-job applications.">
+  <title>Remote Job Application Kit</title>
+  <style>
+    :root{--navy:#0b1736;--blue:#2563eb;--cyan:#06b6d4;--ink:#10233f;--muted:#61708a;--soft:#f3f7fc;--line:#dfe7f2;--white:#fff;--shadow:0 18px 50px rgba(11,23,54,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}.brand{font-weight:850;font-size:20px;color:var(--navy);display:flex;gap:10px;align-items:center}.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:17px}.links{display:flex;gap:28px;font-size:14px;color:#34445e}.nav-cta,.btn{background:var(--blue);color:#fff;border-radius:12px;padding:12px 19px;font-weight:800;box-shadow:0 8px 22px rgba(37,99,235,.22);display:inline-block}.hero{background:linear-gradient(110deg,#f4f9ff 0%,#eef7ff 52%,#fff 100%);padding:82px 0 72px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.eyebrow{display:inline-block;background:#dceaff;color:#1758c7;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:850;letter-spacing:.04em}.hero h1{font-size:clamp(42px,5vw,68px);line-height:1.02;letter-spacing:-.045em;margin:18px 0;color:var(--navy)}.hero h1 span{color:var(--blue)}.lead{font-size:20px;color:#30425f;max-width:620px}.sublead{color:var(--muted);font-size:16px;max-width:610px}.btn{font-size:16px;padding:16px 23px;margin-top:15px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:24px;color:#53637c;font-size:13px}.trust b{color:var(--navy)}.mockup{position:relative;min-height:470px}.screen{background:var(--navy);border-radius:24px;padding:10px;box-shadow:var(--shadow);transform:rotate(1deg);position:absolute;left:12%;right:4%;top:40px}.screen-inner{background:white;border-radius:16px;padding:34px 28px;height:310px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.screen-inner strong{font-size:29px;color:var(--navy)}.screen-inner small{color:var(--muted);font-size:15px;margin-top:8px}.paper{position:absolute;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:18px;width:180px;font-weight:800;color:var(--navy)}.p1{top:0;left:2%;transform:rotate(-8deg)}.p2{top:20px;right:0;transform:rotate(7deg)}.p3{bottom:30px;left:0;transform:rotate(-5deg)}.p4{bottom:0;right:5%;transform:rotate(5deg);width:235px}.paper span{display:block;color:var(--blue);font-size:11px;margin-top:8px}.section{padding:88px 0}.soft{background:var(--soft)}.center{text-align:center}.section h2{font-size:42px;line-height:1.1;letter-spacing:-.035em;color:var(--navy);margin:0 0 12px}.section-intro{color:var(--muted);max-width:680px;margin:0 auto 45px}.features{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.feature{padding:24px 16px;text-align:center}.icon{width:54px;height:54px;border-radius:50%;background:#e2efff;color:var(--blue);display:grid;place-items:center;margin:0 auto 16px;font-size:23px}.feature h3{font-size:17px;margin:0 0 8px;color:var(--navy)}.feature p{font-size:14px;color:var(--muted);margin:0}.included{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}.items{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}.item{display:flex;gap:12px;padding:12px 0}.item .mini{width:38px;height:38px;border-radius:10px;background:#eaf3ff;color:var(--blue);display:grid;place-items:center;flex:none}.item h3{font-size:15px;margin:0 0 3px;color:var(--navy)}.item p{font-size:13px;color:var(--muted);margin:0}.bundle{background:#eef5ff;border:1px solid #d7e6ff;padding:20px;border-radius:16px;margin-top:20px;font-weight:750;color:var(--navy)}.bundle-card{background:#f7fbff;border-radius:24px;min-height:430px;padding:35px;position:relative;box-shadow:var(--shadow);border:1px solid var(--line)}.stack{position:absolute;inset:55px 30px}.stack .card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 14px 35px rgba(11,23,54,.12);font-weight:850;color:var(--navy)}.c1{width:65%;top:30px;left:17%;transform:rotate(-2deg)}.c2{width:58%;top:130px;left:4%;transform:rotate(-8deg)}.c3{width:58%;top:120px;right:3%;transform:rotate(7deg)}.c4{width:65%;bottom:5px;left:17%;transform:rotate(2deg)}.dark{background:var(--navy);color:white}.dark h2{color:white}.results{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.checks{display:grid;grid-template-columns:1fr 1fr;gap:16px}.check{display:flex;gap:10px;color:#dce8ff;font-size:15px}.check i{width:22px;height:22px;border-radius:50%;background:#3f7bf0;color:white;display:grid;place-items:center;font-style:normal;flex:none}.photo{height:340px;border-radius:22px;background:linear-gradient(145deg,#dceaff,#fff);display:grid;place-items:center;color:var(--navy);font-size:24px;font-weight:850;text-align:center;padding:30px}.offer{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.price-card{background:#fff;color:var(--navy);border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}.badge{display:inline-block;background:#ffe4ee;color:#c0265d;padding:6px 10px;border-radius:999px;font-size:11px;font-weight:900}.price{font-size:54px;font-weight:900;letter-spacing:-.05em;margin:8px 0}.old{text-decoration:line-through;color:#8b96a9;font-size:20px;margin-left:8px}.price-card .btn{width:100%;text-align:center}.small{font-size:12px;color:#70809a;text-align:center;margin-top:12px}.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{border:1px solid var(--line);border-radius:18px;padding:24px;background:white}.quote p{font-size:15px;color:#44546c}.person{font-weight:850;color:var(--navy);font-size:14px}.faq{max-width:800px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:800;color:var(--navy)}.faq p{color:var(--muted);font-size:14px}.final{background:linear-gradient(135deg,#eaf3ff,#f9fcff);text-align:center}.footer{background:var(--navy);color:#b9c8df;padding:38px 0}.footer .brand{color:white}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer a{color:#dce7f8;font-size:13px}.disclaimer{font-size:12px;color:#7c8ca6;margin-top:16px}.mobile-menu{display:none}
+    @media(max-width:900px){.links{display:none}.mobile-menu{display:block}.hero-grid,.included,.results,.offer{grid-template-columns:1fr}.mockup{min-height:400px}.features{grid-template-columns:repeat(2,1fr)}.quotes{grid-template-columns:1fr}.items{grid-template-columns:1fr}.hero{padding-top:55px}.section{padding:65px 0}.screen{left:8%;right:3%}}
+    @media(max-width:560px){.hero h1{font-size:43px}.features,.checks{grid-template-columns:1fr}.paper{width:135px;padding:12px;font-size:12px}.p4{width:180px}.screen-inner{height:260px}.mockup{min-height:330px}.section h2{font-size:34px}.footer-grid{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+<header class="nav">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+    <a class="brand" href="#"><span class="brand-mark">▣</span>Remote Job Kit</a>
+    <nav class="links">
+      <a href="#included">What's Included</a><a href="#how">How It Works</a><a href="#proof">Why It Works</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="#buy">Get the Kit</a>
+    <span class="mobile-menu">☰</span>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <span class="eyebrow">THE COMPLETE REMOTE JOB SEARCH SYSTEM</span>
+    <h1>Remote Job<br><span>Application Kit</span></h1>
+    <p class="lead"><b>Build stronger remote-job applications without starting from scratch every time.</b></p>
+    <p class="sublead">The complete practical toolkit to create better CVs, tailor applications, prepare for interviews and organize your entire remote job search — all in one place.</p>
+    <a class="btn" href="#buy">Get the Complete Kit — $19&nbsp; →</a>
+    <div class="trust"><span>⚡ <b>Instant access</b></span><span>✓ <b>Secure checkout</b></span><span>☁ <b>Digital lifetime access</b></span></div>
+  </div>
+  <div class="mockup" aria-label="Product bundle mockup">
+    <div class="paper p1">CV Templates<span>Customer Support<br>Data Entry<br>Virtual Assistant</span></div>
+    <div class="paper p2">Cover Letter<span>Editable template</span></div>
+    <div class="paper p3">50 AI Prompts<span>Ready-to-use prompts</span></div>
+    <div class="paper p4">Job Application Tracker<span>Excel dashboard + follow-ups</span></div>
+    <div class="screen"><div class="screen-inner"><strong>Remote Job<br>Application Kit</strong><small>Your complete system for a more organized job search.</small></div></div>
+  </div>
+</div>
+</section>
+
+<section class="section soft" id="proof">
+<div class="container center">
+  <h2>Why You Need This Kit</h2>
+  <p class="section-intro">Sending CVs randomly isn't enough. You need a repeatable system that helps you apply, prepare and track with intention.</p>
+  <div class="features">
+    <div class="feature"><div class="icon">◷</div><h3>Save Time</h3><p>Stop starting from zero every time. Use ready-to-go templates and proven prompts.</p></div>
+    <div class="feature"><div class="icon">◎</div><h3>Apply Better</h3><p>Tailor your CV and cover letter to match each real job description.</p></div>
+    <div class="feature"><div class="icon">✦</div><h3>Prepare Better</h3><p>Get ready for interviews with structured answers and real examples.</p></div>
+    <div class="feature"><div class="icon">✓</div><h3>Stay Organized</h3><p>Track applications, follow-ups and results in one place.</p></div>
+    <div class="feature"><div class="icon">↗</div><h3>Improve</h3><p>Review your process and use what you learn to make better applications.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="included">
+<div class="container included">
+  <div>
+    <h2>What's Included</h2>
+    <p class="section-intro" style="margin:0 0 25px">Everything you need to run a professional and organized remote job search.</p>
+    <div class="items">
+      <div class="item"><div class="mini">▤</div><div><h3>Complete Job Search Guide</h3><p>Step-by-step guidance covering CVs, ATS, applications, LinkedIn and interviews.</p></div></div>
+      <div class="item"><div class="mini">✦</div><div><h3>50 AI Job-Search Prompts</h3><p>Ready-to-use prompts for every stage of your job search.</p></div></div>
+      <div class="item"><div class="mini">▣</div><div><h3>3 Editable CV Templates</h3><p>Customer Support, Data Entry / Admin and Virtual Assistant.</p></div></div>
+      <div class="item"><div class="mini">✉</div><div><h3>Cover Letter Template</h3><p>A concise structure you can adapt to relevant opportunities.</p></div></div>
+      <div class="item"><div class="mini">in</div><div><h3>LinkedIn Profile Template</h3><p>Improve your headline, About section, experience and skills.</p></div></div>
+      <div class="item"><div class="mini">◉</div><div><h3>Interview Workbook</h3><p>25 common questions, STAR method and practice exercises.</p></div></div>
+      <div class="item"><div class="mini">▦</div><div><h3>Job Application Tracker</h3><p>Excel tracker with dashboard, status tracking and follow-ups.</p></div></div>
+      <div class="item"><div class="mini">→</div><div><h3>START HERE Guide</h3><p>Quick setup and implementation instructions.</p></div></div>
+    </div>
+    <div class="bundle">🎁 All of this comes in one complete digital bundle.</div>
+  </div>
+  <div class="bundle-card">
+    <div class="stack">
+      <div class="card c1">REMOTE JOB<br>APPLICATION KIT<br><span style="color:#2563eb;font-size:12px">Complete Guide</span></div>
+      <div class="card c2">50 AI PROMPTS</div><div class="card c3">CV + COVER LETTER</div><div class="card c4">JOB APPLICATION TRACKER</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section dark" id="how">
+<div class="container results">
+  <div>
+    <h2>Built for Action — Not Just Reading</h2>
+    <p style="color:#c6d4ea">Use the kit as a workflow: <b>Find → Tailor → Prepare → Track → Improve.</b></p>
+    <div class="checks" style="margin-top:28px">
+      <div class="check"><i>✓</i>Create professional, ATS-friendly applications</div>
+      <div class="check"><i>✓</i>Keep track of applications and follow-ups</div>
+      <div class="check"><i>✓</i>Tailor your CV and cover letter to each job</div>
+      <div class="check"><i>✓</i>Use AI effectively to save time</div>
+      <div class="check"><i>✓</i>Prepare for interviews with real examples</div>
+      <div class="check"><i>✓</i>Feel more organized and in control</div>
+    </div>
+  </div>
+  <div class="photo">Better tools.<br><span style="color:#2563eb">Better applications.</span><br><small style="font-size:13px;color:#61708a">Your goal is the opportunity — the kit organizes the process.</small></div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="offer" id="buy">
+    <div><span class="eyebrow">LAUNCH OFFER</span><h2>Everything you need to stop starting from zero.</h2><p class="sublead">One practical digital bundle. No subscription. No complicated setup.</p></div>
+    <div class="price-card">
+      <span class="badge">LIMITED-TIME LAUNCH PRICE</span>
+      <h3 style="font-size:24px;margin:16px 0 0">Remote Job Application Kit</h3>
+      <p style="color:#70809a;margin:4px 0">Complete bundle · Instant digital access</p>
+      <div class="price">$19 <span class="old">$29</span></div>
+      <!-- REPLACE # BELOW WITH YOUR CHECKOUT URL -->
+      <a class="btn" href="https://payhip.com/" target="_blank" rel="noopener">Get the Complete Kit — $19</a>
+      <div class="small">Secure checkout · Digital product · No physical shipping</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section soft">
+<div class="container">
+  <h2 class="center">What You'll Be Able to Do</h2>
+  <p class="section-intro center">The goal isn't to promise a job. It's to give you a clearer, faster and more organized process for presenting your real experience.</p>
+  <div class="quotes">
+    <div class="quote"><p>“I can finally see what I need to change instead of rewriting my CV from scratch every time.”</p><div class="person">— Example buyer feedback</div></div>
+    <div class="quote"><p>“The combination of templates, prompts and the tracker makes the process much easier to manage.”</p><div class="person">— Example buyer feedback</div></div>
+    <div class="quote"><p>“Having an interview workbook and application tracker in the same bundle is genuinely useful.”</p><div class="person">— Example buyer feedback</div></div>
+  </div>
+  <p class="disclaimer center">The quotes above are illustrative placeholders for the launch page. Replace them with verified customer testimonials after receiving real feedback.</p>
+</div>
+</section>
+
+<section class="section" id="faq">
+<div class="container faq">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <details open><summary>Do I need previous remote-work experience?</summary><p>No. The kit can help you identify and present transferable skills, but every claim in your application should be truthful.</p></details>
+  <details><summary>Can I reuse the templates?</summary><p>Yes. They're designed to be edited and adapted to relevant applications and roles.</p></details>
+  <details><summary>Can I use the AI prompts with ChatGPT?</summary><p>Yes. The prompts are designed as general-purpose job-search prompts that can be adapted to your AI assistant.</p></details>
+  <details><summary>Will this guarantee me a job?</summary><p>No. No legitimate career product can guarantee employment. The kit is designed to improve your application process, organization and preparation.</p></details>
+  <details><summary>Is this a course?</summary><p>No. It's a practical digital toolkit designed to be used while you search and apply.</p></details>
+</div>
+</section>
+
+<section class="section final">
+<div class="container center">
+  <span class="eyebrow">READY TO STOP STARTING FROM ZERO?</span>
+  <h2 style="margin-top:18px">Build the system.<br>Adapt it. Apply. Track. Improve.</h2>
+  <p class="section-intro">Your next application doesn't need to begin with a blank document.</p>
+  <a class="btn" href="#buy">Get the Complete Kit — $19&nbsp; →</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footer-grid">
+  <div><div class="brand"><span class="brand-mark">▣</span>Remote Job Kit</div><div style="font-size:12px;margin-top:7px">Your next opportunity is closer than you think.</div></div>
+  <div><a href="#included">What's Included</a> &nbsp; <a href="#how">How It Works</a> &nbsp; <a href="#faq">FAQ</a></div>
+</div>
+<div class="container disclaimer">© 2026 Remote Job Kit. Digital product. No employment guarantee. Replace placeholder testimonials and checkout URL before publishing.</div>
+</footer>
+</body>
+</html>
